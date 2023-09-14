@@ -1,0 +1,74 @@
+<!-- Jai shree ram -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabalpur travels</title>
+
+    <style>
+        body{
+            background-color: azure;
+        }
+        .form
+        {
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .head
+        {
+            background-color: rgb(228, 123, 24);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px;
+            height: 150px;
+            padding-top: 100px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="head">Hire - Taxi Jabalpur Travels</h1>
+
+    <b>
+        <h2 class="form">Booking Form:</h2>
+        <form method="POST" action="Lab_exam1_form.php">
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <input type="text" name="name" required><br><br>
+
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="contactNumber" required><br><br>
+
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pickup Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="pickupAddress" required><br><br>
+
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destination Address: &nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="destinationAddress" required><br><br>
+
+            <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select Cab Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <select name="cabType" required>
+                <option value="Economy">Economy - Rs. 5 per km</option>
+                <option value="Standard">Standard - Rs. 8 per km</option>
+                <option value="Premium">Premium - Rs. 10 per km</option>
+            </select><br><br>
+
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trip Distance (in km):&nbsp;</label>
+            <input type="number" step="0.01" name="tripDistance" required><br><br>
+
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Promo Code/Discount Amount:</label>
+            <input type="number" name="promoCode"><br>
+
+            <br>
+
+            <input type="submit" value="Proceed To Payment">
+    </b>
+    </form>
+</body>
+
+</html>
